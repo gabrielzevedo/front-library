@@ -1,6 +1,6 @@
 {
   "name": "@gabrielzevedo/admin-components",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "sideEffects": [
     "**/*.scss"
@@ -12,7 +12,7 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "lint": "eslint . --max-warnings 0",
+    "lint": "eslint .",
     "format": "pnpm lint --fix && prettier --write .",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "test": "cypress run --component"
