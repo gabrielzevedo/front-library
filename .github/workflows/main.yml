@@ -1,7 +1,7 @@
-name: Release
+name: CI Front Library
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
