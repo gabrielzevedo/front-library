@@ -38,5 +38,5 @@ jobs:
       - name: Test
         uses: cypress-io/github-action@v6
         with:
-          project: packages/admin-components
-          # build: pnpm build
+          working-directory: packages/admin-components
+          build: npx cypress info
