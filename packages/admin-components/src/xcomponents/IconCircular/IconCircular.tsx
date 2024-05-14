@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 
-import { Icon, IconProps } from '@/components/Icon'
+import { Icon, IconProps } from '@/xcomponents/Icon'
 
 type variantType = 'success' | 'warning' | 'danger'
 const variantsStyles: {
