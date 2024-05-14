@@ -6,5 +6,6 @@
   "linked": [],
   "access": "public",
   "updateInternalDependencies": "patch",
-  "ignore": ["@gabrielzevedo/admin-components-docs"]
+  "ignore": ["@gabrielzevedo/admin-components-docs"],
+  "baseBranch": "main"
 }
