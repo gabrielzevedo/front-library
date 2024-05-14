@@ -35,6 +35,9 @@ jobs:
       - name: Lint
         run: pnpm lint
 
+      - name: Install Cypress
+        run: pnpm install --save-dev cypress
+
       - name: Test
         uses: cypress-io/github-action@v6
         with:
