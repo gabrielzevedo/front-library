@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react'
 
 import { cn } from '@/lib/utils'
 
-import { icons } from '../icons-path'
+import { icons } from '@/icons-path'
 
 const iconSizes = {
   1: 'size-1',

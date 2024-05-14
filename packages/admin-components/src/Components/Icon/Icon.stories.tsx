@@ -1,6 +1,6 @@
 import type { Meta, StoryFn, StoryObj } from '@storybook/react'
 
-import * as icons from '../icons-path'
+import * as icons from '../../icons-path'
 import { Icon, IconProps } from './Icon'
 
 const meta = {
