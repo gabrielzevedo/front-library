@@ -9,32 +9,32 @@ describe('Variants', () => {
 
   it('Secondary', () => {
     cy.mount(<Button variant="secondary" />)
-    cy.get('button').should('have.class', 'text-primary-bold bg-primary-light')
+    cy.get('button').should('have.class', 'bg-primary-light text-primary-bold')
   })
 
   it('Tertiary', () => {
     cy.mount(<Button variant="tertiary" />)
-    cy.get('button').should('have.class', 'text-on-primary bg-inverted-2')
+    cy.get('button').should('have.class', 'bg-inverted-2 text-on-primary')
   })
 
   it('Warning', () => {
     cy.mount(<Button variant="warning" />)
-    cy.get('button').should('have.class', 'text-on-base bg-warning')
+    cy.get('button').should('have.class', 'bg-warning text-on-base')
   })
 
   it('Danger', () => {
     cy.mount(<Button variant="danger" />)
-    cy.get('button').should('have.class', 'text-base-1 bg-danger')
+    cy.get('button').should('have.class', 'bg-danger text-base-1')
   })
 
   it('Outline', () => {
     cy.mount(<Button variant="outline" />)
-    cy.get('button').should('have.class', 'text-inverted-2 border border-inverted-2')
+    cy.get('button').should('have.class', 'border border-inverted-2 text-inverted-2')
   })
 
   it('OutlineSecondary', () => {
     cy.mount(<Button variant="outlineSecondary" />)
-    cy.get('button').should('have.class', 'text-primary border border-primary')
+    cy.get('button').should('have.class', 'border border-primary text-primary')
   })
 })
 
