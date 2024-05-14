@@ -4,7 +4,7 @@ import { defineConfig, Options } from 'tsup'
 export default defineConfig((options: Options) => ({
   treeshake: true,
   splitting: true,
-  entry: ['src/components/Button/index.ts', 'src/components/Icon/index.ts', 'src/components/IconCircular/index.ts'],
+  entry: ['src/components/Button', 'src/components/Icon', 'src/components/IconCircular'],
   format: ['esm'],
   dts: true,
   minify: true,
