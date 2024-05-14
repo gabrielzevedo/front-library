@@ -1,0 +1,13 @@
+{
+  "extends": "@gabrielzevedo/typescript-config/react-library.json",
+  "include": [".", ".eslintrc.js"],
+  "exclude": ["dist", "build", "node_modules"],
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": [
+      "cypress",
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from '@storybook/addon-docs'
+import { ArgTypes, Controls, Source } from '@storybook/blocks'
+
+import { Icon } from '.'
+import * as IconStories from './Icon.stories'
+
+<Meta of={IconStories} />
+
+# Icon
+
+## List
+
+List of available icons.
+
+<Canvas of={IconStories.List} />
+
+## Props
+
+<ArgTypes />
+
+## Sizes
+
+Sizes available for the Icon component are: `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`.
+
+<Canvas of={IconStories.Sizes} />
+
+## Classes
+
+The Icon component can have additional classes, the classes will be merged with the default classes.
+
+<Canvas of={IconStories.Classes} />

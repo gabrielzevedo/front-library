@@ -1,0 +1,49 @@
+import { Canvas, Meta } from '@storybook/addon-docs'
+import { ArgTypes, Controls, Source } from '@storybook/blocks'
+
+import { Button } from '.'
+import * as ButtonStories from './Button.stories'
+
+<Meta of={ButtonStories} />
+
+# Button
+
+## Props
+
+<ArgTypes />
+
+## Variants
+
+Variants available for the Button component are: `primary`, `secondary`, `tertiary`, `outline`, `outlineSecondary`, `warning`, `danger`, `onlyText`.
+
+<Canvas of={ButtonStories.Variants} />
+
+## Sizes
+
+Sizes available for the Button component are: `small`, `default`, `large`.
+
+<Canvas of={ButtonStories.Sizes} />
+
+## States
+
+States available for the Button component are: `disabled`, `loading`.
+
+<Canvas of={ButtonStories.States} />
+
+## Icon
+
+The Button component can have an icon, which can be positioned to the left or right of the text.
+
+<Canvas of={ButtonStories.Icon} />
+
+## Classes
+
+The Button component can have additional classes, the classes will be merged with the default classes.
+
+<Canvas of={ButtonStories.Classes} />
+
+## Anchor or Button
+
+The Button component can be rendered as an anchor or a button.
+
+<Canvas of={ButtonStories.AnchorOrButton} />

@@ -1,0 +1,13 @@
+{
+  "name": "@gabrielzevedo/tailwindcss-config",
+  "version": "0.0.1",
+  "private": false,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.ts",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

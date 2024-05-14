@@ -1,0 +1,48 @@
+{
+  "name": "@gabrielzevedo/admin-components",
+  "version": "0.0.1",
+  "license": "MIT",
+  "sideEffects": [
+    "**/*.scss"
+  ],
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": "./dist"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint . --max-warnings 0",
+    "format": "pnpm lint --fix && prettier --write .",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "test": "cypress run --component"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@gabrielzevedo/eslint-config": "workspace:*",
+    "@gabrielzevedo/tailwindcss-config": "workspace:*",
+    "@gabrielzevedo/typescript-config": "workspace:*",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "cypress": "^13.9.0",
+    "cypress-vite": "^1.5.0",
+    "esbuild-sass-plugin": "^3.2.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss": "^3.4.3",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,26 @@
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+html {
+  @apply scroll-smooth font-sans tracking-4 antialiased;
+}
+
+button {
+  @apply tracking-4;
+}
+
+/* autofill hack bg color */
+input:autofill {
+  box-shadow: 0 0 0px 50px rgb(var(--color-base-3) / 100) inset;
+  & + * {
+    @apply bg-base-3;
+  }
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 50px rgb(var(--color-base-3) / 100) inset;
+  & + * {
+    @apply bg-base-3;
+  }
+}

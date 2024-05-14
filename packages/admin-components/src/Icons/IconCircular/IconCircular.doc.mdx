@@ -1,0 +1,25 @@
+import { Canvas, Meta } from '@storybook/addon-docs'
+import { ArgTypes, Controls, Source } from '@storybook/blocks'
+
+import { IconCircular } from '.'
+import * as IconCircularStories from './IconCircular.stories'
+
+<Meta of={IconCircularStories} />
+
+# Icon Circular
+
+## Props
+
+<ArgTypes />
+
+## Variants
+
+Variants available for the Icon Circular component are: `success`, `warning`, `danger`.
+
+<Canvas of={IconCircularStories.Variants} />
+
+## Custom Icon and Background
+
+The Icon Circular component can have a custom icon and background color.
+
+<Canvas of={IconCircularStories.CustomIconAndBackground} />

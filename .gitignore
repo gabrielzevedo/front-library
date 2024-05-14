@@ -1,13 +1,26 @@
-.DS_Store
-node_modules
-.turbo
+# Logs
 *.log
-.next
+
+# Dependency directories
+node_modules
+
+# Turbo
+.turbo
+.cache
+
+# Build files
 dist
 dist-ssr
-*.local
-.env
-.cache
 server/dist
 public/dist
-storybook-static/
+
+# Storybook
+storybook-static
+*storybook.log
+
+# Cypress
+# cypress
+
+# Misc
+*.DS_Store
+*.local

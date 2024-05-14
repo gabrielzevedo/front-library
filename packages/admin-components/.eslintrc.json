@@ -1,0 +1,5 @@
+/** @type {import("eslint").Linter.Config} */
+{
+  "extends": ["@gabrielzevedo/eslint-config", "plugin:storybook/recommended"],
+  "plugins": ["storybook"]
+}
