@@ -33,22 +33,20 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Cypress tests
-        uses: ./
-        with:
-          working-directory: packages/admin-components
-          build: npx cypress info
+      - name: Build
+        run: pnpm build
 
-      - name: Configure Cypress
+      - name: Install Cypress
+        uses: cypress-io/github-action@v6
+        with:
+          runTests: false
+
+      - name: Cypress Tests
         uses: cypress-io/github-action@v6
         with:
           install: false
           component: true
           working-directory: packages/admin-components
-          # working-directory: ./packages/admin-components/
-          # runTests: false
-          build: pnpm build
-          test: pnpm test
 
       - name: Lint
         run: pnpm lint
