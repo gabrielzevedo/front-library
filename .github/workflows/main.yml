@@ -22,6 +22,7 @@ jobs:
         uses: pnpm/action-setup@v3
         with:
           version: 9
+          run_install: false
 
       - name: Setup Node.js 20.x
         uses: actions/setup-node@v4
@@ -44,5 +45,6 @@ jobs:
       - name: Test
         uses: cypress-io/github-action@v6
         with:
+          install: false
           component: true
           working-directory: ./packages/admin-components/
