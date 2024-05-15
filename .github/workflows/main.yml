@@ -42,12 +42,12 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Cypress Tests
+      - name: Lint
+        run: pnpm lint
+
+      - name: Tests
         uses: cypress-io/github-action@v6
         with:
           install: false
           component: true
           working-directory: packages/admin-components
-
-      - name: Lint
-        run: pnpm lint
