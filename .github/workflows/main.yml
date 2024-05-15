@@ -30,15 +30,14 @@ jobs:
           cache: 'pnpm'
 
       - name: Install Dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Lint
         run: pnpm lint
 
-      - name: Install Cypress
-        run: pnpm install --save-dev cypress
-
       - name: Test
         uses: cypress-io/github-action@v6
         with:
+          install: false
           component: true
+          project: ./packages/admin-components/
