@@ -39,7 +39,7 @@ jobs:
           install: false
           component: true
           working-directory: ./packages/admin-components/
-          runTests: false
+          # runTests: false
           build: pnpm build
           test: pnpm test
 
