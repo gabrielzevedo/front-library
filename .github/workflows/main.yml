@@ -45,6 +45,5 @@ jobs:
       - name: Test
         uses: cypress-io/github-action@v6
         with:
-          install: false
           component: true
           working-directory: ./packages/admin-components/
