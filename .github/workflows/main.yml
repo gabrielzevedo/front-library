@@ -42,8 +42,13 @@ jobs:
       - name: Lint
         run: pnpm lint
 
-      - name: Test
+      - name: Configure Cypress
         uses: cypress-io/github-action@v6
         with:
+          install: false
           component: true
           working-directory: ./packages/admin-components/
+          runTests: false
+
+      - name: Test
+        run: pnpm test
