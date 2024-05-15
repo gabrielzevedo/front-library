@@ -1,5 +1,11 @@
 # @gabrielzevedo/admin-components
 
+## 0.0.5
+
+### Patch Changes
+
+- Explicit export
+
 ## 0.0.4
 
 ### Patch Changes

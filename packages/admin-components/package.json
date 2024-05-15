@@ -1,13 +1,42 @@
 {
   "name": "@gabrielzevedo/admin-components",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
-  "types": "./dist/index.d.mts",
+  "type": "module",
+  "files": [
+    "dist/*",
+    "dist/**/*"
+  ],
   "exports": {
-    ".": "./dist"
+    "./Button": {
+      "import": "./dist/Button/index.js",
+      "types": "./dist/Button/index.d.ts"
+    },
+    "./Icon": {
+      "import": "./dist/Icon/index.js",
+      "types": "./dist/Icon/index.d.ts"
+    },
+    "./IconCircular": {
+      "import": "./dist/IconCircular/index.js",
+      "types": "./dist/IconCircular/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "typesVersions": {
+    "*": {
+      "Button": [
+        "./dist/Button/index.d.ts"
+      ],
+      "Icon": [
+        "./dist/Icon/index.d.ts"
+      ],
+      "IconCircular": [
+        "./dist/IconCircular/index.d.ts"
+      ]
+    }
   },
   "scripts": {
-    "build": "tsup",
+    "build": "rm -rf dist && tsup",
     "dev": "tsup --watch",
     "lint": "eslint .",
     "format": "pnpm lint --fix && prettier --write .",
