@@ -6,7 +6,6 @@
     "dev": "storybook dev -p 6006",
     "preview-storybook": "serve storybook-static",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf storybook-static",
-    "lint": "eslint ./stories/*.stories.tsx",
     "build-storybook": "storybook build"
   },
   "dependencies": {

@@ -1,5 +1,11 @@
 # @gabrielzevedo/admin-components
 
+## 0.0.4
+
+### Patch Changes
+
+- Remove barrel files
+
 ## 0.0.3
 
 ### Patch Changes
