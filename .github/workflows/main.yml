@@ -60,11 +60,6 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Install Cypress
-        uses: cypress-io/github-action@v6
-        with:
-          runTests: false
-
       - name: Cypress Tests
         uses: cypress-io/github-action@v6
         with:
