@@ -35,8 +35,14 @@ jobs:
       - name: Lint
         run: pnpm lint
 
+      - name: Set up Cypress binary cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/Cypress
+          key: cypress-${{ runner.os }}-cypress-${{ hashFiles('pnpm-lock.yaml') }}
+
       - name: Test
         uses: cypress-io/github-action@v6
         with:
           component: true
-          project: ./packages/admin-components/
+          working-directory: ./packages/admin-components/
