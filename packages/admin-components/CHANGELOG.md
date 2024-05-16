@@ -1,5 +1,11 @@
 # @gabrielzevedo/admin-components
 
+## 0.0.7
+
+### Patch Changes
+
+- dd4d075: Export all components like barrel files
+
 ## 0.0.5
 
 ### Patch Changes
