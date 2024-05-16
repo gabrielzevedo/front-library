@@ -1,40 +1,8 @@
 {
   "name": "@gabrielzevedo/admin-components",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
   "type": "module",
-  "files": [
-    "dist/*",
-    "dist/**/*"
-  ],
-  "exports": {
-    "./Button": {
-      "import": "./dist/Button/index.js",
-      "types": "./dist/Button/index.d.ts"
-    },
-    "./Icon": {
-      "import": "./dist/Icon/index.js",
-      "types": "./dist/Icon/index.d.ts"
-    },
-    "./IconCircular": {
-      "import": "./dist/IconCircular/index.js",
-      "types": "./dist/IconCircular/index.d.ts"
-    },
-    "./package.json": "./package.json"
-  },
-  "typesVersions": {
-    "*": {
-      "Button": [
-        "./dist/Button/index.d.ts"
-      ],
-      "Icon": [
-        "./dist/Icon/index.d.ts"
-      ],
-      "IconCircular": [
-        "./dist/IconCircular/index.d.ts"
-      ]
-    }
-  },
   "scripts": {
     "build": "rm -rf dist && tsup",
     "dev": "tsup --watch",
@@ -70,5 +38,28 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "files": [
+    "dist/*",
+    "dist/**/*"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./Button": {
+      "import": "./dist/components/Button/index.js",
+      "types": "./dist/components/Button/index.d.ts"
+    },
+    "./Icon": {
+      "import": "./dist/components/Icon/index.js",
+      "types": "./dist/components/Icon/index.d.ts"
+    },
+    "./IconCircular": {
+      "import": "./dist/components/IconCircular/index.js",
+      "types": "./dist/components/IconCircular/index.d.ts"
+    },
+    "./package.json": "./package.json"
   }
 }

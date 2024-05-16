@@ -5,6 +5,7 @@ export default defineConfig((options: Options) => ({
   treeshake: true,
   splitting: true,
   entry: [
+    'src/index.ts',
     'src/components/Button',
     'src/components/Icon',
     'src/components/IconCircular',

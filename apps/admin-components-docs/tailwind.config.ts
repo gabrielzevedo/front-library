@@ -1,9 +1,11 @@
-import type { Config } from 'tailwindcss'
 import defaultPreset from '@gabrielzevedo/tailwindcss-config'
+import type { Config } from 'tailwindcss'
+
+import { getAdminComponentsPath } from './utils'
 
 const config: Pick<Config, 'presets' | 'content'> = {
   presets: [defaultPreset],
-  content: [...(defaultPreset.content as Array<string>), './stories/**/*.{js,ts,jsx,tsx,mdx}']
+  content: [getAdminComponentsPath('/src/**/*.*')]
 }
 
 export default config
