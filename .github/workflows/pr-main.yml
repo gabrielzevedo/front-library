@@ -55,5 +55,5 @@ jobs:
       - name: Chromatic Publish
         uses: chromaui/action@latest
         with:
-          storybookBaseDir: packages/admin-components-docs
+          storybookBaseDir: apps/admin-components-docs
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
