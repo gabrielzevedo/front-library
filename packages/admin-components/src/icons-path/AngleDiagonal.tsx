@@ -2,10 +2,7 @@ import React from 'react'
 
 export const AngleDiagonal = () => (
   <>
-    <path
-      d="M12.7122 4.22709L13.7728 5.28775L5.28753 13.773L4.22687 12.7124L12.7122 4.22709Z"
-      fillRule="evenodd"
-    />
+    <path d="M12.7122 4.22709L13.7728 5.28775L5.28753 13.773L4.22687 12.7124L12.7122 4.22709Z" fillRule="evenodd" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

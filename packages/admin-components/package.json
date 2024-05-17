@@ -18,6 +18,7 @@
     "@gabrielzevedo/eslint-config": "workspace:*",
     "@gabrielzevedo/tailwindcss-config": "workspace:*",
     "@gabrielzevedo/typescript-config": "workspace:*",
+    "@storybook/react": "8.1.1",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react": "^4.2.1",
@@ -49,16 +50,16 @@
       "types": "./dist/index.d.ts"
     },
     "./Button": {
-      "import": "./dist/components/Button/index.js",
-      "types": "./dist/components/Button/index.d.ts"
+      "import": "./dist/components/Button/Button.js",
+      "types": "./dist/components/Button/Button.d.ts"
     },
     "./Icon": {
-      "import": "./dist/components/Icon/index.js",
-      "types": "./dist/components/Icon/index.d.ts"
+      "import": "./dist/components/Icon/Icon.js",
+      "types": "./dist/components/Icon/Icon.d.ts"
     },
     "./IconCircular": {
-      "import": "./dist/components/IconCircular/index.js",
-      "types": "./dist/components/IconCircular/index.d.ts"
+      "import": "./dist/components/IconCircular/IconCircular.js",
+      "types": "./dist/components/IconCircular/IconCircular.d.ts"
     },
     "./package.json": "./package.json"
   }

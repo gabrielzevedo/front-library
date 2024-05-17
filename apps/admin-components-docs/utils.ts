@@ -1,4 +1,4 @@
-import { join, dirname, resolve } from 'path'
+import { dirname, join, resolve } from 'path'
 
 const ADMIN_COMPONENTS_PATH = resolve('../../packages/admin-components')
 
@@ -10,6 +10,6 @@ export const getAdminComponentsPath = (value: string): string => {
  * This function is used to resolve the absolute path of a package.
  * It is needed in projects that use Yarn PnP or are set up within a monorepo.
  */
-export function getAbsolutePath(value: string): any {
+export function getAbsolutePath(value: string): string {
   return dirname(require.resolve(join(value, 'package.json')))
 }

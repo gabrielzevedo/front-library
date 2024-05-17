@@ -29,12 +29,14 @@ describe('Variants', () => {
 
   it('Outline', () => {
     cy.mount(<Button variant="outline" />)
-    cy.get('button').should('have.class', 'border border-inverted-2 text-inverted-2')
+    cy.get('button').should('have.class', 'border')
+    cy.get('button').should('have.class', 'border-inverted-2 text-inverted-2')
   })
 
   it('OutlineSecondary', () => {
     cy.mount(<Button variant="outlineSecondary" />)
-    cy.get('button').should('have.class', 'border border-primary text-primary')
+    cy.get('button').should('have.class', 'border')
+    cy.get('button').should('have.class', 'border-primary text-primary')
   })
 })
 

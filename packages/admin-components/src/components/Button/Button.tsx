@@ -5,7 +5,7 @@ import { Icon, IconProps } from '@/components/Icon'
 import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center rounded-lg bg-transparent px-5 text-center font-semibold leading-none tracking-tight no-underline transition after:align-middle focus:outline-none focus-visible:ring-2 focus-visible:ring-focus focus-visible:ring-offset-1',
+  'inline-flex items-center justify-center rounded-lg bg-transparent px-5 text-center font-semibold no-underline transition after:align-middle focus:outline-none focus-visible:ring-2 focus-visible:ring-focus focus-visible:ring-offset-1',
   {
     variants: {
       variant: {
@@ -22,9 +22,9 @@ const buttonVariants = cva(
           'h-auto border-transparent p-0 text-inverted-2 hover:bg-transparent hover:underline active:bg-transparent'
       },
       size: {
-        small: 'h-10 text-f6',
-        default: 'h-12 text-f6',
-        large: 'h-14 text-f5'
+        small: 'text-f6 h-10',
+        default: 'text-f6 h-12',
+        large: 'text-f5 h-14'
       },
       disabled: {
         true: 'pointer-events-none border-base-3 bg-base-3 text-on-base-2',
