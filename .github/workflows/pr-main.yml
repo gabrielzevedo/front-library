@@ -8,8 +8,8 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
-  release:
-    name: Release
+  ci-pr-main:
+    name: Verify PR
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install pnpm
         uses: pnpm/action-setup@v3
@@ -51,3 +53,10 @@ jobs:
           install: false
           component: true
           working-directory: packages/admin-components
+
+      - name: Chromatic Publish
+        uses: chromaui/action@latest
+        with:
+          onlyChanged: true
+          workingDir: apps/admin-components-docs
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
