@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install pnpm
         uses: pnpm/action-setup@v3
@@ -55,6 +57,7 @@ jobs:
       - name: Chromatic Publish
         uses: chromaui/action@latest
         with:
+          onlyChanged: true
           workingDir: apps/admin-components-docs
           storybookBuildDir: apps/admin-components-docs/storybook-static
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
