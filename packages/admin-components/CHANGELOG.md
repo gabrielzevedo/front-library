@@ -1,5 +1,11 @@
 # @gabrielzevedo/admin-components
 
+## 0.0.7
+
+### Patch Changes
+
+- Fix import storybook components
+
 ## 0.0.6
 
 ### Patch Changes

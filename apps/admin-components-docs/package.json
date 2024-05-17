@@ -6,7 +6,8 @@
     "dev": "storybook dev -p 6006",
     "preview-storybook": "serve storybook-static",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf storybook-static",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "chromatic --exit-zero-on-changes"
   },
   "dependencies": {
     "@gabrielzevedo/admin-components": "workspace:*",
@@ -33,6 +34,7 @@
     "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.19",
+    "chromatic": "^11.3.5",
     "cypress": "^13.9.0",
     "cypress-vite": "^1.5.0",
     "eslint": "^8.57.0",
