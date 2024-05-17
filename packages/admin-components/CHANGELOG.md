@@ -1,5 +1,11 @@
 # @gabrielzevedo/admin-components
 
+## 0.0.8
+
+### Patch Changes
+
+- 1dc7c1f: Using new text preset
+
 ## 0.0.7
 
 ### Patch Changes
