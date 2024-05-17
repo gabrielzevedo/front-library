@@ -182,5 +182,5 @@ export const icons = {
   dashedCircle: DashedCircle,
   minusCircle: MinusCircle,
   minusCircleSolid: MinusCircleSolid,
-  dotsThree: DotsThree,
+  dotsThree: DotsThree
 }

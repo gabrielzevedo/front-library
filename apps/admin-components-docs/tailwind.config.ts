@@ -5,7 +5,7 @@ import { getAdminComponentsPath } from './utils'
 
 const config: Pick<Config, 'presets' | 'content'> = {
   presets: [defaultPreset],
-  content: [getAdminComponentsPath('/src/**/*.*')]
+  content: [getAdminComponentsPath('/src/**/*.*'), 'stories/**/*.*']
 }
 
 export default config

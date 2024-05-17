@@ -21,7 +21,7 @@ importers:
   apps/admin-components-docs:
     dependencies:
       '@gabrielzevedo/admin-components':
-        specifier: workspace:*
+        specifier: link:/Users/lojaintegrada/Projetos/front-library-ga/packages/admin-components
         version: link:../../packages/admin-components
       '@gabrielzevedo/tailwindcss-config':
         specifier: workspace:*
@@ -129,6 +129,9 @@ importers:
       '@gabrielzevedo/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
+      '@storybook/react':
+        specifier: 8.1.1
+        version: 8.1.1(prettier@3.2.5)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.3.3)
       '@types/react':
         specifier: ^18.2.61
         version: 18.2.61
@@ -182,7 +185,7 @@ importers:
         version: 5.1.4(@types/node@20.10.6)(sass@1.77.0)
 
   packages/eslint-config:
-    devDependencies:
+    dependencies:
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.8.0
         version: 7.8.0(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.3.3))(eslint@8.57.0)(typescript@5.3.3)

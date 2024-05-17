@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import plugin from 'tailwindcss/plugin'
 import paddingSafe from './plugins/paddingSafe'
 
 const defaultPreset: Config = {
@@ -83,16 +84,6 @@ const defaultPreset: Config = {
         4: '-0.025rem',
         5: '-0.03125rem'
       },
-      fontSize: {
-        f1: '3rem',
-        f2: '2.25rem',
-        f3: '1.5rem',
-        f4: '1.25rem',
-        f5: '1rem',
-        f6: '.875rem',
-        f7: '.75rem',
-        f8: '.625rem'
-      },
       fontFamily: {
         sans: 'Inter, sans-serif'
       },
@@ -120,7 +111,51 @@ const defaultPreset: Config = {
   plugins: [
     // Usage: Same as core padding, but with `-safe`, like `px-[value]-safe`.
     // Why: https://webkit.org/blog/7929/designing-websites-for-iphone-x/
-    paddingSafe
+    paddingSafe,
+    plugin(({ addComponents, theme }) => {
+      addComponents({
+        '.text-f1': {
+          fontSize: theme('fontSize.5xl'), // 48px
+          letterSpacing: '-0.0625em', // -1px
+          lineHeight: '4.375rem' // 70px
+        },
+        '.text-f2': {
+          fontSize: theme('fontSize.4xl'), // 36px
+          letterSpacing: '-0.046875em', // -0.75px
+          lineHeight: '3.25rem' // 52px
+        },
+        '.text-f3': {
+          fontSize: theme('fontSize.2xl'), // 24px
+          letterSpacing: '-0.03125em', // -0.5px
+          lineHeight: '2.188rem' // 35px
+        },
+        '.text-f4': {
+          fontSize: theme('fontSize.xl'), // 20px
+          letterSpacing: '-0.02625em', // -0.42px
+          lineHeight: '1.813rem' // 29px
+        },
+        '.text-f5': {
+          fontSize: theme('fontSize.base'), // 16px
+          letterSpacing: '-0.025em', // -0.4px
+          lineHeight: '1.438rem' // 23px
+        },
+        '.text-f6': {
+          fontSize: theme('fontSize.sm'), // 14px
+          letterSpacing: '-0.025em', // -0.4px
+          lineHeight: '1.5rem' // 24px
+        },
+        '.text-f7': {
+          fontSize: theme('fontSize.xs'), // 12px
+          letterSpacing: '-0.025em', // -0.4px
+          lineHeight: '1.063rem' // 17px
+        },
+        '.text-f8': {
+          fontSize: '0.625rem', // 10px
+          letterSpacing: '-0.025em', // -0.4px
+          lineHeight: '0.875rem' // 14px
+        }
+      })
+    })
   ]
 }
 

@@ -1,5 +1,6 @@
 import { defineConfig } from 'cypress'
 import vitePreprocessor from 'cypress-vite'
+
 import { getAdminComponentsPath } from './utils'
 
 export default defineConfig({

@@ -3,14 +3,7 @@ import React from 'react'
 export const MinusCircleSolid = () => (
   <>
     <g clipPath="url(#a)">
-      <mask
-        id="b"
-        width="18"
-        height="18"
-        x="0"
-        y="0"
-        maskUnits="userSpaceOnUse"
-      >
+      <mask id="b" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse">
         <path d="M18 0H0v18h18V0Z" fill="#fff" />
       </mask>
       <g mask="url(#b)">
