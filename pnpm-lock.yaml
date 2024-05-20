@@ -21,7 +21,7 @@ importers:
   apps/admin-components-docs:
     dependencies:
       '@gabrielzevedo/admin-components':
-        specifier: link:/Users/lojaintegrada/Projetos/front-library-ga/packages/admin-components
+        specifier: workspace:*
         version: link:../../packages/admin-components
       '@gabrielzevedo/tailwindcss-config':
         specifier: workspace:*
