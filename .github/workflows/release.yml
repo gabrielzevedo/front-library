@@ -38,11 +38,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Publish Storybook
-        uses: bitovi/github-actions-storybook-to-github-pages@v1.0.1
-        with:
-          install_command: pnpm install
-          build_command: cd apps/admin-components-docs && pnpm build-storybook
-          path: apps/admin-components-docs/storybook-static
-          checkout: false
