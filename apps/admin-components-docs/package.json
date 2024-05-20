@@ -13,7 +13,7 @@
     "format": "pnpm lint --fix && prettier --write ."
   },
   "dependencies": {
-    "@gabrielzevedo/admin-components": "link:/Users/lojaintegrada/Projetos/front-library-ga/packages/admin-components",
+    "@gabrielzevedo/admin-components": "workspace:*",
     "@gabrielzevedo/tailwindcss-config": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
