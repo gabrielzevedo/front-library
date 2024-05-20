@@ -39,7 +39,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      # - name: Send a Slack notification if a publish happens
-      #   if: steps.changesets.outputs.published == 'true'
-      #   # You can do something when a publish happens.
-      #   run: my-slack-bot send-notification --message "A new version of ${GITHUB_REPOSITORY} was published!"
+      - name: Publish Storybook
+        uses: bitovi/github-actions-storybook-to-github-pages@v1.0.1
+        with:
+          install_command: pnpm install
+          build_command: cd apps/admin-components-docs && pnpm build-storybook
+          path: apps/admin-components-docs/storybook-static
+          checkout: false
